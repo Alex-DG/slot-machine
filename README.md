@@ -1,5 +1,4 @@
 # slot-machine
 Testing wheel annimation with a slot machine
 
-(/../slot-machine/blob/master/slot_machine_screen.png?raw=true "")
-
+![alt tag](https://raw.githubusercontent.com/Alex-DG/slot-machine/master/slot_machine_screen.png)
