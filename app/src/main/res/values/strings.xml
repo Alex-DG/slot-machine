@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SlotMachine</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title">Slot Machine</string>
+    <string name="play_button">SPIN</string>
+    <string name="future_platforms">Future Platforms</string>
+    <string name="win_dialog_title">We have a winner !</string>
+</resources>

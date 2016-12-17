@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/title"
+        android:textColor="@color/red"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <!-- Slot machine icon -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_slot_machine" />
+
+    <!-- Slot machine columns -->
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_custom_rect_rounded_corners">
+
+        <!-- COLUMN ONE -->
+        <ViewFlipper
+            android:id="@+id/view_flipper_column_one"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/view_flipper_column_two"
+            android:background="@color/lightgrey"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:gravity="center"
+                android:src="@drawable/ic_heart"
+                android:tag="heart" />
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:src="@drawable/ic_raspberry"
+                android:tag="raspberry" />
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:src="@drawable/ic_star"
+                android:tag="star" />
+        </ViewFlipper>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/view_flipper_column_two"
+            android:background="@color/darkgrey" />
+
+        <!-- COLUMN TWO -->
+        <ViewFlipper
+            android:id="@+id/view_flipper_column_two"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@color/lightgrey"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:src="@drawable/ic_raspberry"
+                android:tag="raspberry" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:gravity="center"
+                android:src="@drawable/ic_heart"
+                android:tag="heart" />
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:src="@drawable/ic_star"
+                android:tag="star" />
+
+        </ViewFlipper>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/view_flipper_column_three"
+            android:background="@color/darkgrey" />
+
+        <!-- COLUMN THREE -->
+        <ViewFlipper
+            android:id="@+id/view_flipper_column_three"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view_flipper_column_two"
+            android:background="@color/lightgrey"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:src="@drawable/ic_star"
+                android:tag="star" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:gravity="center"
+                android:src="@drawable/ic_heart"
+                android:tag="heart" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:src="@drawable/ic_raspberry"
+                android:tag="raspberry" />
+
+        </ViewFlipper>
+
+    </RelativeLayout>
+
+    <!-- Play button -->
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cirlce_button_states"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/play_button" />
+
+</RelativeLayout>
