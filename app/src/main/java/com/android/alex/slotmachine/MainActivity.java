@@ -23,7 +23,7 @@ import com.android.alex.slotmachine.adapter.ListSlotAdapter;
 // Alexandre Di Guida
 //
 // Slot machine :
-// Is working thanks to 3 viewFlippers which defined each columns of the machine
+// Working with 3 viewFlippers which defined each columns of the machine
 // I've added a vertical animation and a random Y velocity which defined the motion of the vertical
 // rotation of a slot machine
 //
